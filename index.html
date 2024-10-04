@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">Inder</a>
 
+        <!-- Add a button for the mobile toggle -->
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+
         <nav>
             <a href="#" class="active"> Home</a>
-            <a href="./Services.html" >Services</a>
-            <a href="./Skills.html" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="./Services.html">Services</a>
+            <a href="./Skills.html">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-img">
             <img src="./Profile Photo/me-modified.jpeg" alt="">
@@ -38,5 +45,16 @@
             <a href="inderjeetsingh5962@gmail.com" class="btn">Hire me</a>
         </div>
     </section>
+
+    <!-- Add JavaScript for the mobile toggle -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
