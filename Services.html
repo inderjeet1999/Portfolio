@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Services</title>
+  <style>
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(82, 48, 48);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.services-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card h2 {
+  font-size: 1.4rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (min-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="services-container">
+    <h1>My Services</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <h2>Responsive Web Design</h2>
+        <p>I create modern, responsive websites that look great on all devices.</p>
+      </div>
+      <div class="service-card">
+        <h2>UI/UX Design</h2>
+        <p>Delivering user-friendly interfaces with smooth navigation for a great user experience.</p>
+      </div>
+      <div class="service-card">
+        <h2>Web Development</h2>
+        <p>Using HTML, CSS, and JavaScript frameworks to build functional, visually appealing websites.</p>
+      </div>
+      <div class="service-card">
+        <h2>Website Maintenance</h2>
+        <p>Offering ongoing website maintenance services to keep your website updated and secure.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
